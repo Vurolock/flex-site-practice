@@ -51,6 +51,7 @@ ul {
     border: 2px solid #9b9b9b;
     margin: 6px 0;
     padding: 6px 0;
+    background-color: #fff;
 }
 
 input {
@@ -65,8 +66,38 @@ input {
 }
 
 main {
-    background-color: #83d0f2;
+    background-color: white;
     flex: 1 1 auto;
+}
+
+.masthead {
+    background-color: #83d0f2;
+    padding: 40px 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 span{
+    background-color: #333;
+    color: #fff;
+    line-height: 45px;
+    font-size: 36px;
+    font-family: "Zilla Slab", Palatino, serif;    
+}
+
+main ul {
+    padding: 30px 15px;
+}
+
+.lorem-list {
+    padding: 20px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+#lorem-list-end {
+    border: none;
 }
 
 footer {
