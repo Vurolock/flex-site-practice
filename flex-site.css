@@ -2,7 +2,6 @@ html, body {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -11,13 +10,19 @@ html, body {
 
 body {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     font-family: "Open Sans", arial, sans-serif;
     color: #333;
+    font-size: 16px;    
 }
 
 header, footer {
     width: 100%;
+}
+
+header {
+    border-top: 5px solid #83d0f2;
+    padding: 15px 15px 0 15px;
 }
 
 .logo {
@@ -25,10 +30,43 @@ header, footer {
     background-color: black;
     color: white;
     text-decoration: none;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    border-bottom: 1px solid black;
+    padding: 6px 0;
+    height: 36px;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    border: 2px solid #9b9b9b;
+    margin: 6px 0;
+    padding: 6px 0;
+}
+
+input {
+    font-family: "Open Sans", arial, sans-serif;
+    width: 90%;    
+}
+
+.search img {
+    height: 18px;
+    align-self: center;
+    padding-left: 10px;
 }
 
 main {
     background-color: #83d0f2;
+    flex: 1 1 auto;
 }
 
 footer {
